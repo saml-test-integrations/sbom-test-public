@@ -6,6 +6,6 @@ on:
 
 jobs:
   sbom:
-    uses: saml-test-integrations/ssdlc-actions/.github/workflows/syft-release-sbom.yml@main
+    uses: saml-test-integrations/sbom-test/.github/workflows/syft-release-sbom.yml@main
     with:
       sbom_name: ${{ github.event.release.tag_name }}
