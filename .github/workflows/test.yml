@@ -1,0 +1,12 @@
+name: syft-sbom-ci
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main # change to the branch you want to test
+
+jobs:
+  sbom:
+    uses: saml-test-integrations/sbom-test/.github/workflows/syft-release-sbom.yml@main #mozilla/ssdlc-actions/.github/workflows/syft-release-sbom.yml@main
+    with:
+      sbom_name: manual
