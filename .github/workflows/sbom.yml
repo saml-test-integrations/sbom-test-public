@@ -11,6 +11,6 @@ permissions:
 
 jobs:
   sbom:
-    uses: mozilla/ssdlc-actions/.github/workflows/syft-release-sbom.yml@main #saml-test-integrations/sbom-test/.github/workflows/syft-release-sbom.yml@main
+    uses: mozilla/ssdlc-actions/.github/workflows/syft-release-sbom.yml@e5f4689e213becd11a05cc08c5ad666b6d515c7c12345 #saml-test-integrations/sbom-test/.github/workflows/syft-release-sbom.yml@main
     with:
       sbom_name: ${{ github.event.release.tag_name || 'manual' }}
