@@ -5,7 +5,7 @@ on:
     types: [published]
   push:
     branches:
-      - 'release/**'
+      - 'release/**' # branch must match this pattern
   workflow_dispatch:
 
 permissions:
